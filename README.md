@@ -1,58 +1,34 @@
 # Yolo for BOORU CHARS
 
-YOLOv8 models and code for CG / art image processing
+Here is an attempt to detect anime/CG character poses and hence scene composition with [Ultralitics YOLOv8](https://github.com/ultralytics/ultralytics) <br>
+Detection classes has been built over typical views of torso components on scene, when the feature of YOLO to use box-surrounding context seems very useful <br>
+
+Key torso components covers: <br>
+~ head (human and several furry cases) <br>
+~ bust area <br>
+~ belly-to-hip area <br>
+~ some furry specific features <br>
+Not so complex pose structure as [COCO keypoints](https://cocodataset.org/#keypoints-2020) is simplify scene interpretation a lot <br>
+
+Two models suppotred now, look [here](models/README.md) for details <br>
+
+The playground datasets are torrent distributed : <br>
+~ [BOORU CHARS 2021](https://nyaa.si/view/1384820) <br>
+~ [BOORU CHARS 2015](https://nyaa.si/view/1468367) <br>
+~ [BOORU CHARS 2022](https://nyaa.si/view/1547662) <br>
+~ and also NSFW grabs from imageboards, mentioned there
+
+
 
 ## text recovery from Kaggle (under construction)
 
-Anime and CG characters detection using YOLOv5
-
-Here is an attempt to **detect anime/CG character poses and hence scene composition** with [YOLOv5](https://github.com/ultralytics/yolov5) 
-using key torso components:
-- head
-- bust area
-- belly-to-hips area
-
-Detection classes has been built not over OBJECTS (except head) but over TYPICAL VIEWS of torso components on scene.
-Not so complex pose structure as [COCO keypoints](https://cocodataset.org/#keypoints-2020) or [NudeNet](https://github.com/notAI-tech/NudeNet) is simplify scene interpretation a lot.
-As long as we detect not standalone objects the feature of YOLO to use box-surrounding context seems very useful.
-
-The playground is [BOORU CHARS DATASET 2021](https://www.kaggle.com/printcraft/booru-chars-2021) with it's BOORU+ID key
-and also [BOORU CHARS 2015 DATASET](https://www.kaggle.com/printcraft/booru-chars-2015) processed with V9
-and fresh [BOORU CHARS 2022 DATASET](https://www.kaggle.com/datasets/printcraft/booru-chars-2022) processed with V11
-
-Oracle (18XE) database and PL/SQL used for results storage and processing just because it's best for me.
-Some PL/SQL code included here only to illustrate algorythms used - it's almost impossible anybody will use Oracle for this.
-
-Full training datasets with images **available via torrent only upon request because of some hentai content**.
-
-There is a [furry head spinoff](https://www.kaggle.com/datasets/printcraft/cartoon-furry-anime-heads-detection-using-yolov5) devoted to non-human cartoon heads - may be jointly used with external NMS.
-
-### Version 10+ common AA/AL model classes:
-
-0 - head - all angles incl. faceless rear view
-1 - bust - from collarbone center to pair of covered breasts
-2 - boob - bust with no bra, nipples mostly visible, generally NSFW
-3 - shld - shoulder and maybe one breast viewed mostly in profile, exactly rear view excluded
-4 - sideb - uncovered version of shld, with nipples or other NSFW visual marks
-5 - belly - from belly button to hips half (stocking line), knees below belly, mostly covered
-6 - nopan - no panty-like clothes on bikini area (regardless of censoring), evidently NSFW belly
-7 - butt - buttock area visible at least partially from behind, more or less covered, standing or sitting
-8 - ass - uncovered NSFW version of butt, often with pussy visible from behing
-9 - split - sitting with legs open wide (90+ degrees), mostly with at least one knee above belly
-10 - sprd - heavily NSFW version of split
-11 - vsplt - stand split or visually similar pose
-12 - vsprd - heavily NSFW version of vsplit
-13 - hip - full or almost full hip(-s) side view with knee(-s) above belly, usually when sitting or lying
-
-**This model:**
+**AA model:**
 - has classes 5-13 are for belly area, 1-4 for bust area and a head
 - contains pairs of classes for SFW/NSFW equivalents, the division between them is subjective 
 - contains adjacent classes, only \"typical\" views trained in each and it's - again - subjective
 - not trained (and not performs good) on heavily decorated characters
 
 Uncommon or yet undiscovered views of torso components were intentionally left undetected.
-
-5 - jacko - memetic \"Jack'O contest pose\" only in SJ model
 
 This is the UNION OF ADJACENT MODELS intended to use with external NMS over concurrent detections
 
