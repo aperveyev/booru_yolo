@@ -4,7 +4,7 @@ I need more resources and inspiration to go farther
 
 ### yolov8s_aa06.pt - torso components model
  
- 0 - head   - pretty girl and not only, all angles incl. faceless rear view <br>
+ 0 - head   - anime pretty girl and not only <br>
  1 - bust   - torso part from collarbone center to pair of covered breasts <br>
  2 - boob   - bust with no bra, nipples mostly visible, generally NSFW <br>
  3 - shld   - shoulder and maybe one breast viewed mostly in profile, exactly rear view excluded <br>
@@ -22,18 +22,17 @@ I need more resources and inspiration to go farther
 15 - feral  - all-four non-human torso <br>
 16 - hdrago - dragon style head <br>
 17 - hpony  - pony style head <br>
-18 - hfox   - fox / dog head <br>
-19 - hrabb  - rabbit head <br>
-20 - hcat   - cat head <br>
-21 - hbear  - bear head <br>
-22 - jacko  - memetic "Jack'O contest pose" when head toward viewer <br>
+18 - hfox   - cartoon fox / dog head - Zootopia Nick Wilde <br>
+19 - hrabb  - cartoon rabbit head - Zootopia Judy Hopps or bunnygirl <br>
+20 - hcat   - cartoon cat or anime catgirl head <br>
+21 - hbear  - cartoon bear head <br>
+22 - jacko  - memetic "Jack'O contest pose" with a head toward viewer <br>
 23 - jackx  - jacko viewed from behind, sometimes heavily NSFW <br>
 
 Note: <br>
-~ furry (non-human) heads are art-styled, Judy Hopps is far from a rabbit <br>
-~ catgirl and bunnygirl heads may be (intentionally) confused with hcat and hrabb <br>
-~ no specific NSFW class created for hip <br>
-~ upside-down detections worse than usual ones <br>
+~ furry heads are cartoon/art styled <br>
+~ torso compopents usually have SFW/NSFW oblect pair, but no specific NSFW class created for hip <br>
+~ upside-down or lying pose detection may work worse than a frontal one <br>
 
 
 ### yolov8s_pp07.pt - hentai objects and interactions model
@@ -46,8 +45,8 @@ Hard negative mining implemented to minimize false detections for surely SFW pic
 1 - spr = spreading { vaginal and anal } not interacting <br>
 2 - ptr = penetration { pns + spr interaction } <br>
 3 - fng = fingering { spr + hand interaction } <br>
-4 - cun = cunnilingus { pussy + face interaction } <br>
+4 - cun = cunnilingus { spr + face interaction } <br>
 5 - pzu = paizuri { pns + boobs interaction } <br>
-6 - hjb = handjob { hand + pns interaction } <br>
+6 - hjb = handjob { pns + hand interaction } <br>
 7 - orl = oral fellatio { pns + face interaction } <br>
 
