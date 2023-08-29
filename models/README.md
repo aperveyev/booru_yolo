@@ -1,5 +1,6 @@
-# PyTorch actual models here
+# PyTorch actual (08.2023) models here
 
+I need more resources and inspiration to go farther
 
 ### yolov8s_aa06.pt - torso components model
  
@@ -29,15 +30,17 @@
 23 - jackx  - jacko viewed from behind, sometimes heavily NSFW <br>
 
 Note: <br>
-* furry (non-human) heads are art-styled, Judy Hopps is far from a rabbit <br>
-* catgirl and bunnygirl heads may be (intentionally !) confused with hcat and hrabb <br>
-* no specific NSFW class created for hip <br>
-* upside-down detections worse than usual ones <br>
+~ furry (non-human) heads are art-styled, Judy Hopps is far from a rabbit <br>
+~ catgirl and bunnygirl heads may be (intentionally) confused with hcat and hrabb <br>
+~ no specific NSFW class created for hip <br>
+~ upside-down detections worse than usual ones <br>
 
 
 ### yolov8s_pp07.pt - hentai objects and interactions model
 
-All objects here are heavy NSFW indicators.
+All objects in this model are heavy NSFW indicators <br>
+Both anime and furry hentai used for training <br>
+Hard negative mining implemented to minimize false detections for surely SFW pictures <br>
 
 0 - pns = penis not interacting <br>
 1 - spr = spreading { vaginal and anal } not interacting <br>
@@ -48,6 +51,3 @@ All objects here are heavy NSFW indicators.
 6 - hjb = handjob { hand + pns interaction } <br>
 7 - orl = oral fellatio { pns + face interaction } <br>
 
-Both anime and furry hentai used for training.
-
-Hard negative mining implemented to minimize false detections of surely SFW pictures.
