@@ -4,7 +4,7 @@
 
 ### yolov8s_aa06.pt - torso components model
  
- 0 - head   - all angles incl. faceless rear view.
+ 0 - head   - all angles incl. faceless rear view<br>
  1 - bust   - from collarbone center to pair of covered breasts.
  2 - boob   - bust with no bra, nipples mostly visible, generally NSFW.
  3 - shld   - shoulder and maybe one breast viewed mostly in profile, exactly rear view excluded.
