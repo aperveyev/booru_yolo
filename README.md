@@ -17,3 +17,5 @@ The playground datasets are torrent distributed : <br>
 ~ [BOORU CHARS 2015](https://nyaa.si/view/1468367) <br>
 ~ [BOORU CHARS 2022](https://nyaa.si/view/1547662) <br>
 ~ and also NSFW grabs from imageboards, mentioned there
+
+![Attention picker](/images/det_wAL_cr.jpg)
