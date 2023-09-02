@@ -19,5 +19,5 @@ The playground datasets are torrent distributed : <br>
 ~ and also NSFW grabs from imageboards, mentioned there
 <br>
 <br>
-![Attention picker](/images/det_wAL_cr.jpg)
+![Attention picker](images/1c28005fdf4b262ae894a3da4dfc777cd0b98ac3.jpg)
 <br>
