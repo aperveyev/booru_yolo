@@ -32,8 +32,8 @@ I need more resources and inspiration to go farther
 Note: <br>
 ~ furry heads are cartoon/art styled, not real animals <br>
 ~ a lot of furry heads fall in between of head classes (evidently more classes required) <br>
-~ torso compopents usually have SFW/NSFW oblect pair, but no specific NSFW class created for hip <br>
-~ upside-down or lying pose detection may work worse than for frontal cases <br>
+~ torso compopents usually have SFW/NSFW oblect pair, but no specific NSFW class created for hip or jackx <br>
+~ upside-down or lying pose detection may work worse than for frontal cases (training set bias) <br>
 
 
 ### yolov8s_pp07.pt - hentai objects and interactions model
@@ -49,5 +49,4 @@ Hard negative mining implemented to minimize false detections for surely SFW pic
 4 - cun = cunnilingus { spr + face interaction } <br>
 5 - pzu = paizuri { pns + boobs interaction } <br>
 6 - hjb = handjob { pns + hand interaction } <br>
-7 - orl = oral fellatio { pns + face interaction } <br>
-
+7 - orl = oral / fellatio { pns + face interaction } <br>
