@@ -8,9 +8,9 @@ Key torso components covers: <br>
 ~ bust area <br>
 ~ belly-to-hip area <br>
 ~ some furry specific features <br>
-Not so complex pose structure as [COCO keypoints](https://cocodataset.org/#keypoints-2020) is simplify scene interpretation a lot <br>
+Not so complex pose structure as [COCO keypoints](https://cocodataset.org/#keypoints-2020) will simplify scene interpretation a lot <br>
 
-Two models suppotred now, look [here](models/README.md) for details <br>
+Two separate models supported now - general torso "AA" and heavy NSFW features "PP", look [here](models/README.md) for details <br>
 
 The playground datasets are torrent distributed : <br>
 ~ [BOORU CHARS 2021](https://nyaa.si/view/1384820) <br>
