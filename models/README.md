@@ -2,7 +2,7 @@
 
 I need more resources and inspiration to go farther
 
-### yolov8s_aa06.pt - torso components model
+### yolov8s_aa06.pt - general torso components model
  
  0 - head   - anime pretty girl and not only <br>
  1 - bust   - torso part from collarbone center to pair of covered breasts <br>
@@ -30,9 +30,10 @@ I need more resources and inspiration to go farther
 23 - jackx  - jacko viewed from behind, sometimes heavily NSFW <br>
 
 Note: <br>
-~ furry heads are cartoon/art styled <br>
+~ furry heads are cartoon/art styled, not real animals <br>
+~ a lot of furry heads fall in between of head classes (evidently more classes required) <br>
 ~ torso compopents usually have SFW/NSFW oblect pair, but no specific NSFW class created for hip <br>
-~ upside-down or lying pose detection may work worse than a frontal one <br>
+~ upside-down or lying pose detection may work worse than for frontal cases <br>
 
 
 ### yolov8s_pp07.pt - hentai objects and interactions model
