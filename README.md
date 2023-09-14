@@ -18,6 +18,13 @@ The playground datasets are torrent distributed : <br>
 ~ [BOORU CHARS 2022](https://nyaa.si/view/1547662) <br>
 ~ and also NSFW grabs from imageboards, mentioned there
 <br>
+
+Attention picker<br>
 <br>
 ![Attention picker](images/1c28005fdf4b262ae894a3da4dfc777cd0b98ac3.jpg)
+<br>
+
+Similar composition search, inspect images for more examples  <br>
+<br>
+![Similar composition search](images/BCB_sim_002.jpg)
 <br>
