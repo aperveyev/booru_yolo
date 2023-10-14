@@ -1,6 +1,6 @@
 # PyTorch actual (08.2023) models here
 
-I need more resources and inspiration to go farther
+I need more resources and inspiration to advance
 
 ### yolov8s_aa06.pt - general torso components model
  
@@ -38,8 +38,7 @@ Note: <br>
 
 ### yolov8s_pp07.pt - hentai objects and interactions model
 
-All objects in this model are heavy NSFW indicators <br>
-Both anime and furry hentai used for training <br>
+All objects in this model are heavy NSFW indicators (both anime and furry)<br>
 Hard negative mining implemented to minimize false detections for surely SFW pictures <br>
 
 0 - pns = penis not interacting <br>
