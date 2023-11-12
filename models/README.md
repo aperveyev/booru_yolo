@@ -24,7 +24,7 @@ I need more resources and inspiration to advance
 17 - hpony  - pony style head <br>
 18 - hfox   - cartoon fox / dog head - Zootopia Nick Wilde <br>
 19 - hrabb  - cartoon rabbit head - Zootopia Judy Hopps or bunnygirl <br>
-20 - hcat   - cartoon cat or anime catgirl head <br>
+20 - hcat   - cartoon cat or anime catgirl head (less sharp muzzle compared to hfox) <br>
 21 - hbear  - cartoon bear head <br>
 22 - jacko  - memetic "Jack'O contest pose" with a head toward viewer <br>
 23 - jackx  - jacko viewed from behind, sometimes heavily NSFW <br>
@@ -33,12 +33,12 @@ Note: <br>
 ~ furry heads are cartoon/art styled, not real animals <br>
 ~ a lot of furry heads fall in between of head classes (evidently more classes required) <br>
 ~ torso compopents usually have SFW/NSFW oblect pair, but no specific NSFW class created for hip or jackx <br>
-~ upside-down or lying pose detection may work worse than for frontal cases (training set bias) <br>
+~ upside-down or lying pose detection may work worse than for frontal cases (due to training set bias) <br>
 
 
 ### yolov8s_pp07.pt - hentai objects and interactions model
 
-All objects in this model are heavy NSFW indicators (both anime and furry)<br>
+All objects in this model are heavy NSFW indicators (both anime and furry) <br>
 Hard negative mining implemented to minimize false detections for surely SFW pictures <br>
 
 0 - pns = penis not interacting <br>
@@ -49,3 +49,26 @@ Hard negative mining implemented to minimize false detections for surely SFW pic
 5 - pzu = paizuri { pns + boobs interaction } <br>
 6 - hjb = handjob { pns + hand interaction } <br>
 7 - orl = oral / fellatio { pns + face interaction } <br>
+
+Note: <br>
+~ you cannot use AA and PP models in ensemble so use it one-by-one or combine results externally <br>
+~ PP objects often resides inside AA objects, it can be used as a "proof" <br>
+
+
+#### possible improvements
+
+New classes: <br>
+~ hchibi - round shaped with giant eyes, no ears and (almost) no hair, close to rabbit without ears <br>
+~ hhorse - sharp muzzle (like a dog or dragon) but without jaws, not pony hairstyle <br>
+~ tail - fluffy furry feature <br>
+~ foot - human one (may be with shoes) with a part of shin outstanding from other torso components
+
+More instances for better detections: <br>
+~ human heads with large hats <br>
+~ head closeups (when most of the screen occupied) <br>
+~ lying and upside-down instances  <br>
+
+Others: <br>
+~ change SCALE training hyperparameter from 0.5 (default, now) to 0.6-0.65 to cover even bigger/smaller objects <br>
+
+Message me if you have better ideas <br>
