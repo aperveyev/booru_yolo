@@ -1,7 +1,5 @@
 # PyTorch actual (08.2023) models here
 
-I need more resources and inspiration to advance
-
 ### yolov8s_aa06.pt - general torso components model
  
  0 - head   - anime pretty girl and not only <br>
@@ -28,6 +26,8 @@ I need more resources and inspiration to advance
 21 - hbear  - cartoon bear head <br>
 22 - jacko  - memetic "Jack'O contest pose" with a head toward viewer <br>
 23 - jackx  - jacko viewed from behind, sometimes heavily NSFW <br>
+24 - hhorse - UNDER CONSTRUCTION - sharp muzzle (like a dog or dragon) but without jaws and pony hairstyle <br>
+25 - hbird - UNDER CONSTRUCTION - bird head
 
 Note: <br>
 ~ furry heads are cartoon/art styled, not real animals <br>
@@ -49,6 +49,7 @@ Hard negative mining implemented to minimize false detections for surely SFW pic
 5 - pzu = paizuri { pns + boobs interaction } <br>
 6 - hjb = handjob { pns + hand interaction } <br>
 7 - orl = oral / fellatio { pns + face interaction } <br>
+8 - trb = tribadism { spr + spr interaction } first implemented in pp09 <br>
 
 Note: <br>
 ~ you cannot use AA and PP models in ensemble so use it one-by-one or combine results externally <br>
@@ -58,8 +59,6 @@ Note: <br>
 #### possible improvements
 
 New classes: <br>
-~ hchibi - round shaped with giant eyes, no ears and (almost) no hair, close to rabbit without ears <br>
-~ hhorse - sharp muzzle (like a dog or dragon) but without jaws, not pony hairstyle <br>
 ~ tail - fluffy furry feature <br>
 ~ foot - human one (may be with shoes) with a part of shin outstanding from other torso components
 
@@ -72,3 +71,5 @@ Others: <br>
 ~ change SCALE training hyperparameter from 0.5 (default, now) to 0.6-0.65 to cover even bigger/smaller objects <br>
 
 Message me if you have better ideas <br>
+
+I need more resources and inspiration to advance <br>
