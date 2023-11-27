@@ -1,4 +1,4 @@
-# PyTorch actual (08.2023) models here
+# PyTorch actual (11.2023) models here
 
 ### yolov8s_aa06.pt - general torso components model
  
@@ -36,7 +36,7 @@ Note: <br>
 ~ upside-down or lying pose detection may work worse than for frontal cases (due to training set bias) <br>
 
 
-### yolov8s_pp07.pt - hentai objects and interactions model
+### yolov8s_pp09.pt - hentai objects and interactions model
 
 All objects in this model are heavy NSFW indicators (both anime and furry) <br>
 Hard negative mining implemented to minimize false detections for surely SFW pictures <br>
@@ -72,4 +72,6 @@ Others: <br>
 
 Message me if you have better ideas <br>
 
-I need more resources and inspiration to advance <br>
+#### outdated models
+
+(08.2023) yolov8s_pp07.pt - no TRB object
