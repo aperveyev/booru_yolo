@@ -1,6 +1,6 @@
 # PyTorch actual (11.2023) models here
 
-### yolov8s_aa06.pt - general torso components model
+### yolov8s_aa09.pt - general torso components model
  
  0 - head   - anime pretty girl and not only <br>
  1 - bust   - torso part from collarbone center to pair of covered breasts <br>
@@ -26,20 +26,18 @@
 21 - hbear  - cartoon bear head <br>
 22 - jacko  - memetic "Jack'O contest pose" with a head toward viewer <br>
 23 - jackx  - jacko viewed from behind, sometimes heavily NSFW <br>
-24 - hhorse - UNDER CONSTRUCTION - sharp muzzle (like a dog or dragon) but without jaws and pony hairstyle <br>
-25 - hbird - UNDER CONSTRUCTION - bird head
+24 - hhorse - horse head first implemented in aa09 <br>
+25 - hbird - bird head first implemented in pp09 - bird head
 
 Note: <br>
-~ furry heads are cartoon/art styled, not real animals <br>
-~ a lot of furry heads fall in between of head classes (evidently more classes required) <br>
-~ torso compopents usually have SFW/NSFW oblect pair, but no specific NSFW class created for hip or jackx <br>
-~ upside-down or lying pose detection may work worse than for frontal cases (due to training set bias) <br>
+~ furry heads are cartoon/art styled (not real animals) trained solely on art images <br>
+~ torso compopents usually (but hip and jackx) have SFW/NSFW oblect pair <br>
+~ upside-down or lying pose detection may work worse than frontal (training set bias) <br>
 
 
 ### yolov8s_pp09.pt - hentai objects and interactions model
 
-All objects in this model are heavy NSFW indicators (both anime and furry) <br>
-Hard negative mining implemented to minimize false detections for surely SFW pictures <br>
+All objects in this model are strong NSFW indicators (both for anime and furry) <br>
 
 0 - pns = penis not interacting <br>
 1 - spr = spreading { vaginal and anal } not interacting <br>
@@ -53,8 +51,8 @@ Hard negative mining implemented to minimize false detections for surely SFW pic
 
 Note: <br>
 ~ you cannot use AA and PP models in ensemble so use it one-by-one or combine results externally <br>
-~ PP objects often resides inside AA objects, it can be used as a "proof" <br>
-
+~ PP objects often resides within AA objects, it can be used as a "proof" <br>
+~ hard negative mining done to minimize false detections for surely SFW pictures <br>
 
 #### possible improvements
 
@@ -64,7 +62,7 @@ New classes: <br>
 
 More instances for better detections: <br>
 ~ human heads with large hats <br>
-~ head closeups (when most of the screen occupied) <br>
+~ head closeups <br>
 ~ lying and upside-down instances  <br>
 
 Others: <br>
@@ -75,3 +73,4 @@ Message me if you have better ideas <br>
 #### outdated models
 
 (08.2023) yolov8s_pp07.pt - no TRB object
+(11.2023) yolov8s_pp06.pt - no HHORSE and HBIRD object
