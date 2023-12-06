@@ -26,7 +26,7 @@ The playground datasets are distributed via torrent : <br>
 ~ [BOORU CHARS 2022](https://nyaa.si/view/1547662) <br>
 ~ [BOORU CHARS 2023](https://nyaa.si/view/1740396) also URL catalog here <br>
 
-Attention picker (horse head class not implemented yet) <br>
+Attention picker for aa09 model, more examples [here](images09aa)<br>
 <br>
 ![Attention picker](images/1c28005fdf4b262ae894a3da4dfc777cd0b98ac3.jpg)
 <br>
