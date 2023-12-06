@@ -17,7 +17,7 @@ We can assemble characters (join nearest head-bust-belly-feature groups) and cla
 ~ relative and absolute characters positions, implied interactions <br>
 We can calculate IOU on equivalent objects of structurally comparable images so search for "similar composition" <br>
 
-Two separate models supported - general torso components "AA" and heavy NSFW features "PP", look [here](models/README.md) for details <br>
+Two separate models supported - general torso components "AA" and strong NSFW features "PP", look [here](models/README.md) for details <br>
 Use it one-by-one and combine results externally. NSFW classes can help to recheck safety rating assigned on imageboard(-s) <br>
 
 The playground datasets are distributed via torrent : <br>
@@ -26,12 +26,12 @@ The playground datasets are distributed via torrent : <br>
 ~ [BOORU CHARS 2022](https://nyaa.si/view/1547662) <br>
 ~ [BOORU CHARS 2023](https://nyaa.si/view/1740396) also URL catalog here <br>
 
-Attention picker for aa09 model, more examples [here](images09aa)<br>
+Attention picker for aa09 model, more examples [here](images09aa) <br>
 <br>
 ![Attention picker](images/1c28005fdf4b262ae894a3da4dfc777cd0b98ac3.jpg)
 <br>
 
-Similar composition search, inspect images folder for more examples  <br>
+Similar composition search, more examples [here](images) <br>
 <br>
 ![Similar composition search](images/BCB_sim_002.jpg)
 <br>
