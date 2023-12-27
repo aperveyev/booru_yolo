@@ -70,7 +70,7 @@ Message me if you have better ideas <br>
 
 ### CHANGELOG
 
-(12.2023) yolov8s_aa10.pt - magor training dataset update, heads with large hats and several other improvements <br>
+(12.2023) yolov8s_aa10.pt - magor training dataset update, much more HHORSE and HBIRD, heads with large hats fixed, ETC <br>
 (11.2023) yolov8s_aa09.pt - HHORSE and HBIRD classes added <br>
 (10.2023) yolov8s_pp09.pt - TRB class added <br>
 (08.2023) yolov8s_pp07.pt + yolov8s_aa06.pt - initial versions <br>
