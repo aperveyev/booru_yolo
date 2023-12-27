@@ -63,10 +63,11 @@ More instances for better detections: <br>
 ~ head closeups <br>
 ~ lying and upside-down scenes <br>
 
-Others: <br>
-~ SCALE training hyperparameter changed from 0.5 (default) to 0.6 to cover even bigger/smaller objects <br>
+#### other
 
-Message me if you have better ideas <br>
+~ SCALE training hyperparameter changed from 0.5 (default) to 0.6 to cover even bigger/smaller objects <br>
+~ all other training hyperparameter are defaults <br>
+~ yolo detect train data=E:\AAX\aax.yaml model=yolov8s.pt epochs=80 patience=20 imgsz=640 batch=16 workers=6 project=AAX close_mosaic=10
 
 ### CHANGELOG
 
