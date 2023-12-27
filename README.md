@@ -12,25 +12,26 @@ Key torso components covers: <br>
 ~ some furry specific features <br>
 Not so complex pose structure as [COCO keypoints](https://cocodataset.org/#keypoints-2020) will simplify scene interpretation a lot <br>
 
-Two separate models supported - general torso components "AA" and strong NSFW features "PP", look [here](models/README.md) for details <br>
-NSFW classes can help to recheck safety rating assigned on imageboard(-s) <br>
+Two separate models supported - general torso components "AA" and strong NSFW features "PP", <br>
+look [here](models/README.md) for details <br>
+NSFW classes / model can help to recheck safety rating assigned on imageboard(-s) <br>
 
-The playground datasets are distributed via torrent : <br>
+"In the wild" source datasets are distributed via torrent : <br>
 ~ [BOORU CHARS 2021](https://nyaa.si/view/1384820) <br>
 ~ [BOORU CHARS 2015](https://nyaa.si/view/1468367) <br>
 ~ [BOORU CHARS 2022](https://nyaa.si/view/1547662) <br>
 ~ [BOORU CHARS 2023](https://nyaa.si/view/1740396) also direct URL catalog there <br>
-Detection results over most of BOORU_CHARS stored in [KAGGLE dataset](https://www.kaggle.com/datasets/printcraft/yolov8-torso-detections-over-booru-chars) <br>
 
 Some SFW subset of training data is available on [Ultralitics HUB](https://hub.ultralytics.com/datasets/W1NNLLAb9HH7WvWj1nwP) <br>
-Browse, download or even use it in-place for training <br>
+Browse, download or even use it in-place for DIY training <br>
 
-Using that models' results we can: <br>
+Detection results over most of BOORU_CHARS stored in [KAGGLE dataset](https://www.kaggle.com/datasets/printcraft/yolov8-torso-detections-over-booru-chars) so we can:<br>
 - assemble characters (join nearest head-bust-belly-feature groups) and classify image by content: <br>
   ~ how many characters depicted, what the species are, completeness of character(-s) "assembly" <br>
   ~ scene scale (by biggest or average head size) and depth (by smallest/biggest head size) <br>
   ~ relative and absolute characters positions, implied interactions <br>
 - calculate IOU on equivalent objects of structurally comparable images so search for "similar composition" <br>
+- compare and/or combine results for several models/versions with the same input <br>
 
 Attention picker (for aa09 model), more examples [here](images09aa) <br>
 <br>
