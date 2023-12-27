@@ -67,11 +67,11 @@ More instances for better detections: <br>
 
 ~ SCALE training hyperparameter changed from 0.5 (default) to 0.6 to cover even bigger/smaller objects <br>
 ~ all other training hyperparameter are defaults <br>
-~ yolo detect train data=E:\AAX\aax.yaml model=yolov8s.pt epochs=80 patience=20 imgsz=640 batch=16 workers=6 project=AAX close_mosaic=10
+~ yolo detect train data=E:\AAX\aax.yaml model=yolov8s.pt epochs=80 patience=20 imgsz=640 batch=16 workers=6 close_mosaic=10
 
 ### CHANGELOG
 
-(12.2023) yolov8s_aa10.pt - magor training dataset update, much more HHORSE and HBIRD, heads with large hats fixed, ETC <br>
+(12.2023) yolov8s_aa10.pt - magor training dataset update: much more HHORSE and HBIRD, heads with large hats fixed<br>
 (11.2023) yolov8s_aa09.pt - HHORSE and HBIRD classes added <br>
 (10.2023) yolov8s_pp09.pt - TRB class added <br>
 (08.2023) yolov8s_pp07.pt + yolov8s_aa06.pt - initial versions <br>
