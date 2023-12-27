@@ -1,6 +1,6 @@
-# PyTorch actual (11.2023) models here
+# PyTorch actual (12.2023) models here
 
-### yolov8s_aa09.pt - general torso components model
+### yolov8s_aa10.pt - general torso components model
  
  0 - head   - anime pretty girl and not only <br>
  1 - bust   - torso part from collarbone center to pair of covered breasts <br>
@@ -27,11 +27,11 @@
 22 - jacko  - memetic "Jack'O contest pose" with a head toward viewer <br>
 23 - jackx  - jacko viewed from behind, sometimes heavily NSFW <br>
 24 - hhorse - horse head first implemented in aa09 <br>
-25 - hbird - bird head first implemented in pp09 - bird head
+25 - hbird - bird head first implemented in aa09 <br>
 
 Note: <br>
 ~ furry heads are cartoon/art styled (not real animals) trained solely on art images <br>
-~ torso compopents usually (but hip and jackx) have SFW/NSFW oblect pair <br>
+~ torso compopents usually (except hip and jack*) have SFW/NSFW oblect pair <br>
 ~ upside-down or lying pose detection may work worse than frontal (training set bias) <br>
 
 
@@ -57,20 +57,20 @@ Note: <br>
 #### possible improvements
 
 New classes: <br>
-~ tail - fluffy furry feature <br>
-~ foot - human one (may be with shoes) with a part of shin outstanding from other torso components
+~ hrobot - robot mecha head <br>
 
 More instances for better detections: <br>
-~ human heads with large hats <br>
 ~ head closeups <br>
-~ lying and upside-down instances  <br>
+~ lying and upside-down scenes <br>
 
 Others: <br>
-~ change SCALE training hyperparameter from 0.5 (default, now) to 0.6-0.65 to cover even bigger/smaller objects <br>
+~ SCALE training hyperparameter changed from 0.5 (default) to 0.6 to cover even bigger/smaller objects <br>
 
 Message me if you have better ideas <br>
 
-#### outdated models
+### CHANGELOG
 
-(08.2023) yolov8s_pp07.pt - no TRB object
-(11.2023) yolov8s_pp06.pt - no HHORSE and HBIRD object
+(12.2023) yolov8s_aa10.pt - magor training dataset update, heads with large hats and several other improvements <br>
+(11.2023) yolov8s_aa09.pt - HHORSE and HBIRD classes added <br>
+(10.2023) yolov8s_pp09.pt - TRB class added <br>
+(08.2023) yolov8s_pp07.pt + yolov8s_aa06.pt - initial versions <br>
