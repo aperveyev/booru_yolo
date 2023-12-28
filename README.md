@@ -43,4 +43,4 @@ Similar composition search, more examples [here](images) <br>
 ![Similar composition search](images/BCB_sim_002.jpg)
 <br>
 
-This is completely hobbie project, by I can UPWORK if motivated enough <br>
+This is completely hobbie project, but I can UPWORK something else if motivated enough <br>
