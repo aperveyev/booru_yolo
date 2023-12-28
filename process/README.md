@@ -3,15 +3,18 @@
 ### Toolchain
 
 Main workflow components include: <br>
+
 ~ file/image management tools for Windows <br>
   - [FAR namager]() free, powerful, with valuable pluging <br>
   - [exiftool]() for batch image properties calculation <br>
   - [ImageMagick]() for batch conversions, often SQL generated <br>
   - [Fast Stone image viewer]() for interactive analysis and some processing <br>
-  - [SED @ GnuWin]() for BAT actions against file lists w/o database
+  - [SED @ GnuWin]() for BAT actions against file lists w/o database <br>
+  
 ~ Python modules and DIY scripts <br>
   - [Ultralitics YOLOv8]() current version, also YOLOv5 used several years ago <br>
   - [labelimg]() for interactive labelling according to YOLO requirements <br>
+  
 ~ free edition of Oracle database and SQLdeveloper <br>
   - all table-like data loaded (sqlldr, external tables) and carefully stored
   - trivial to complex processing with SQL or PL/SQL <br>
