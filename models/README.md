@@ -54,7 +54,13 @@ Note: <br>
 ~ PP objects often resides within AA objects, it can be used as a "proof" <br>
 ~ hard negative mining done to minimize false detections for surely SFW pictures <br>
 
-#### possible improvements
+### Possible improvements
+
+Both models already show impressive results (see metrics folder) : <br>
+PP09 - mAP50(B)=0.99389, mAP50-95(B)=0.90014 <br>
+XX10 - mAP50(B)=0.99241, mAP50-95(B)=0.91478 <br>
+There were several rounds of training "next version started from prevoius" (if classes set unchanged). <br>
+I see no easy way to improve it substantially, but keep moving forward ... <br>
 
 New classes: <br>
 ~ hrobot - robot mecha head <br>
@@ -62,6 +68,11 @@ New classes: <br>
 More instances for better detections: <br>
 ~ head closeups <br>
 ~ lying and upside-down scenes <br>
+
+Use training variations (... resources, my pain ...):
+~ start from N (smaller) and M (bigger) v8 models <br>
+~ try to tune hyperparameters <br>
+~ purge NSFW samples to exclude adjacent classes collision
 
 #### other
 
