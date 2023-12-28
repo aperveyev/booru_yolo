@@ -75,19 +75,22 @@ SQL generated BATs <br>
 
 ### Workflow loop
 
-Typical workflow loop of "assisted learning" consists of :
-~ goal formulation (new classes and/or training set extensions and/or certain classes improvements) <br>
-~ additional image gathering (according to goal requirements) using latest models runs over BOORU CHARS pool <br>
+Typical workflow loop of "assisted learning" consists of : <br>
+~ goal definition (new classes and/or training set extensions and/or certain classes improvements) <br>
+~ additional image gathering (according to goal requirements) using latest models runs over BOORU CHARS pool, it may be <br>
+  - "good samples" using best available detections and detection combinations <br>
+  - "bad samples" using evident misdetections or low prob cases (e.g. adjacent classes conflict) <br>
+  - "new samples" using external metadata, e.g. text tag from imageboard <br>
 ~ a lot of LABELIMG-ing over new images <br>
-~ new train+val set creation with internal checks (deduplicate, NMS etc) <br>
+~ new/updated train+val set creation with internal checks (deduplicate, NMS etc) <br>
 ~ TRAINING RUN with several "pitstops" for feedback <br>
   - interrupt training e.g. on 40% and 70% of total <br>
   - run best PT over train+val set <br>
   - compare detections with train+val <br>
-  - find and remove "worst per-image matches" <br>
-  - find and fix several types of biggest per-object differences <br>
-  - update train+val and resume training, some "positive" metrics glitch expected <br>
+  - find and remove "worst per-image matches" using "image match metric" <br>
+  - find and fix several types of biggest per-object differences using "object match metric" <br>
+  - update train+val and resume training, some "positive" mAP glitch expected <br>
 ~ reprocessing of all BOORU CHARS pool (over 4M images) with new PT and store results to database <br>
 
 I already run over 50 of such cycles during 2+ years with diffrent (sub-)models and versions to advance overall result quality. <br>
-If motivated I will extend classes and improve data quality until ... more valuable task happen ? <br>
+If motivated I will farther extend classes and improve data quality until ... more valuable task happen ? <br>
