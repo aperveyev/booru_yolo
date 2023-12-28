@@ -46,15 +46,15 @@ Stored PL/SQL proc: <br>
   - models' classes descriptors, filename parsers etc <br>
 
 ~ batch procedures against data (sub-)sets <br>
-  - Non Maximum Suppression (for several use-cases - inside model, between models, train vs. detect) <br>
+  - Non Maximum Suppression correlator (for several use-cases - inside model, between models, train vs. detect) <br>
   - Torso Components Joiner (for given subset of images) <br>
   - Similar Structured Images Finder (for given input image ID) <br>
 
 Scripts (for semi-automatic run): <br>
 ~ prepare training set to use <br>
 ~ prepare detection dataset, compare with training and generate derivative data <br>
-~ join torso components and generate derivative materialized data 
-~ generate copy / move image+label subset BATs for different types of train-det mismatches (review using labelimg)
+~ join torso components and generate derivative materialized data <br>
+~ generate copy / move image+label subset BATs for different types of train-det mismatches (review using labelimg) <br>
 
 ### Python
 
@@ -72,3 +72,22 @@ SQL generated BATs <br>
 ~ batch copy / rename / move (for file system arrangement, subsetting etc) <br>
 ~ batch convert <br>
 ~  <br>
+
+### Workflow loop
+
+Typical workflow loop of "assisted learning" consists of :
+~ goal formulation (new classes and/or training set extensions and/or certain classes improvements) <br>
+~ additional image gathering (according to goal requirements) using latest models runs over BOORU CHARS pool <br>
+~ a lot of LABELIMG-ing over new images <br>
+~ new train+val set creation with internal checks (deduplicate, NMS etc) <br>
+~ TRAINING RUN with several "pitstops" for feedback <br>
+  - interrupt training e.g. on 40% and 70% of total <br>
+  - run best PT over train+val set <br>
+  - compare detections with train+val <br>
+  - find and remove "worst per-image matches" <br>
+  - find and fix several types of biggest per-object differences <br>
+  - update train+val and resume training, some "positive" metrics glitch expected <br>
+~ reprocessing of all BOORU CHARS pool (over 4M images) with new PT and store results to database <br>
+
+I already run over 50 of such cycles during 2+ years with diffrent (sub-)models and versions to advance overall result quality. <br>
+If motivated I will extend classes and improve data quality until ... more valuable task happen ? <br>
