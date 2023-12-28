@@ -26,10 +26,10 @@ Some SFW subset of training data is available on [Ultralitics HUB](https://hub.u
 Browse, download or even use it in-place for DIY training <br>
 
 Detection results over most of BOORU_CHARS stored in [KAGGLE dataset](https://www.kaggle.com/datasets/printcraft/yolov8-torso-detections-over-booru-chars) so we can:<br>
-- assemble characters (join nearest head-bust-belly-feature groups) and classify image by content: <br>
+- assemble characters (join nearest head-bust-belly-feature groups) and classify image by scene structure: <br>
   ~ how many characters depicted, what the species are, completeness of character(-s) "assembly" <br>
   ~ scene scale (by biggest or average head size) and depth (by smallest/biggest head size) <br>
-  ~ relative and absolute characters positions, implied interactions <br>
+  ~ relative and absolute characters positions, detected/implied interactions <br>
 - calculate IOU on equivalent objects of structurally comparable images so search for "similar composition" <br>
 - compare and/or combine results for several models/versions with the same input <br>
 
@@ -42,3 +42,5 @@ Similar composition search, more examples [here](images) <br>
 <br>
 ![Similar composition search](images/BCB_sim_002.jpg)
 <br>
+
+This is completely hobbie project, by I can UPWORK if motivated enough <br>
