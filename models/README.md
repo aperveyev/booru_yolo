@@ -74,4 +74,5 @@ More instances for better detections: <br>
 (12.2023) yolov8s_aa10.pt - magor training dataset update: much more HHORSE and HBIRD, heads with large hats fixed<br>
 (11.2023) yolov8s_aa09.pt - HHORSE and HBIRD classes added <br>
 (10.2023) yolov8s_pp09.pt - TRB class added <br>
-(08.2023) yolov8s_pp07.pt + yolov8s_aa06.pt - initial versions <br>
+(08.2023) yolov8s_pp07.pt + yolov8s_aa06.pt - initial versions for current reincarnation <br>
+(12.2022) kicked off from KAGGLE because of TOS violation (NSFW) >> all public descriptions, PTs and run results lost <br>
