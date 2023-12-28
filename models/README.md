@@ -32,7 +32,7 @@
 Note: <br>
 ~ furry heads are cartoon/art styled (not real animals) trained solely on art images <br>
 ~ torso compopents usually (except hip and jack*) have SFW/NSFW oblect pair <br>
-~ upside-down or lying pose detection may work worse than frontal (training set bias) <br>
+~ upside-down or lying pose detection may work worse than for frontal ones (due to training set bias) <br>
 
 
 ### yolov8s_pp09.pt - hentai objects and interactions model
