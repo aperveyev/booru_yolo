@@ -69,7 +69,7 @@ More instances for better detections: <br>
 ~ head closeups <br>
 ~ lying and upside-down scenes <br>
 
-Use training variations (... resources, my pain ...):
+Implement training variations (... oh, resources, my pain ...): <br>
 ~ start from N (smaller) and M (bigger) v8 models <br>
 ~ try to tune hyperparameters <br>
 ~ purge NSFW samples to exclude adjacent classes collision
