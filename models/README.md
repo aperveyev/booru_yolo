@@ -62,19 +62,20 @@ XX10 - mAP50(B)=0.99241, mAP50-95(B)=0.91478 <br>
 There were several rounds of training "next version started from prevoius" (if classes set unchanged). <br>
 I see no easy way to improve it substantially, but keep moving forward ... <br>
 
-New classes: <br>
+Planned classes: <br>
 ~ hrobot - robot mecha head <br>
 
-More instances for better detections: <br>
-~ head closeups <br>
-~ lying and upside-down scenes <br>
+Planned dataset improvements: <br>
+~ more lying and upside-down scenes <br>
+~ more obviously missed objects from BOORU CHARS
+~ more head closeups incl. furry muzzles <br>
 
-Implement training variations (... oh, resources, my pain ...): <br>
-~ start from N (smaller) and M (bigger) v8 models <br>
+Training variations (... oh, resources, my headache ...): <br>
+~ start from N (smaller) and M (bigger) v8 models, maybe from the scratch <br>
+~ purge NSFW samples from train+val to exclude adjacent classes collision and make results publicly reproducible <br>
 ~ try to tune hyperparameters <br>
-~ purge NSFW samples to exclude adjacent classes collision
 
-#### other
+#### hints
 
 ~ SCALE training hyperparameter changed from 0.5 (default) to 0.6 to cover even bigger/smaller objects <br>
 ~ all other training hyperparameter are defaults <br>
