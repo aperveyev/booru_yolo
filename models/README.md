@@ -1,4 +1,4 @@
-# PyTorch actual (12.2023) models here
+# PyTorch actual (12.2023) model
 
 ### yolov8s_aa10.pt - general torso components model
  
@@ -34,30 +34,9 @@ Note: <br>
 ~ torso compopents usually (except hip and jack*) have SFW/NSFW oblect pair <br>
 ~ upside-down or lying pose detection may work worse than for frontal ones (due to training set bias) <br>
 
-
-### yolov8s_pp09.pt - hentai objects and interactions model
-
-All objects in this model are strong NSFW indicators (both for anime and furry) <br>
-
-0 - pns = penis not interacting <br>
-1 - spr = spreading { vaginal and anal } not interacting <br>
-2 - ptr = penetration { pns + spr interaction } <br>
-3 - fng = fingering { spr + hand interaction } <br>
-4 - cun = cunnilingus { spr + face interaction } <br>
-5 - pzu = paizuri { pns + boobs interaction } <br>
-6 - hjb = handjob { pns + hand interaction } <br>
-7 - orl = oral / fellatio { pns + face interaction } <br>
-8 - trb = tribadism { spr + spr interaction } first implemented in pp09 <br>
-
-Note: <br>
-~ you cannot use AA and PP models in ensemble so use it one-by-one or combine results externally <br>
-~ PP objects often resides within AA objects, it can be used as a "proof" <br>
-~ hard negative mining done to minimize false detections for surely SFW pictures <br>
-
 ### Possible improvements
 
-Both models already show impressive results (see metrics folder) : <br>
-PP09 - mAP50(B)=0.99389, mAP50-95(B)=0.90014 <br>
+A model already show impressive results (see metrics folder) : <br>
 XX10 - mAP50(B)=0.99241, mAP50-95(B)=0.91478 <br>
 There were several rounds of training "next version started from prevoius" (if classes set unchanged). <br>
 I see no easy way to improve it substantially, but keep moving forward ... <br>
@@ -84,7 +63,6 @@ yolo detect train data=E:\AAX\aax.yaml model=yolov8s.pt epochs=80 patience=20 im
 ### CHANGELOG
 
 (12.2023) yolov8s_aa10.pt - magor training dataset update: much more HHORSE and HBIRD, heads with large hats fixed<br>
-(11.2023) yolov8s_aa09.pt - HHORSE and HBIRD classes added <br>
-(10.2023) yolov8s_pp09.pt - TRB class added <br>
-(08.2023) yolov8s_pp07.pt + yolov8s_aa06.pt - initial versions for current reincarnation <br>
+(10.2023) yolov8s_aa09.pt - HHORSE and HBIRD classes added <br>
+(08.2023) yolov8s_aa06.pt - initial version for current reincarnation <br>
 (12.2022) kicked off from KAGGLE because of TOS violation (NSFW) >> all public descriptions, PTs and run results lost <br>
