@@ -1,6 +1,6 @@
 # PyTorch actual (12.2023) model
 
-### yolov8s_aa10.pt - general torso components model
+### yolov8s_aa10.pt - mainstream general torso components model
  
  0 - head   - anime pretty girl and not only <br>
  1 - bust   - torso part from collarbone center to pair of covered breasts <br>
@@ -34,13 +34,20 @@ Note: <br>
 ~ non-head torso compopents usually (except hip and jack*) have SFW/NSFW adjacent oblect pair <br>
 ~ upside-down or lying pose detection may work worse than for frontal ones (due to training set bias) <br>
 
+**aa10 : 26 classes 60 epoches from XX09**    - mAP50(B) = 0.99241 , mAP50-95(B) = 0.91478 <br>
+**aa09 : 26 classes 60 epoches from XX06**    - mAP50(B) = 0.9938 ,  mAP50-95(B) = 0.89652 <br>
+**aa06 : 24 classes 90 epoches from yolov8s** - mAP50(B) = 0.98724 , mAP50-95(B) = 0.88405 <br>
+
+#### spinoff models
+
+Training conditions variations may break bottlenecks and pitfalls of a single model <br>
+Purging NSFW samples from train+val may exclude adjacent classes collision and make results publicly reproducible <br>
+**as01 : 26 classes 80 epoches from yolov8n , SFW training subset** - mAP50(B) = 0.97806 , mAP50-95(B) = 0.85683 <br>
+**as02 : 26 classes only 30 epoches from yolov8m , SFW subset**     - mAP50(B) = 0.98694 , mAP50-95(B) = 0.87958 <br>
+
 ### Possible improvements
 
-A model already show impressive results (see metrics folder) : <br>
-**XX10 : 26 classes 60 epoches from XX09**    - mAP50(B) = 0.99241 , mAP50-95(B) = 0.91478 <br>
-**XX09 : 26 classes 60 epoches from XX06**    - mAP50(B) = 0.9938 ,  mAP50-95(B) = 0.89652 <br>
-**XX06 : 24 classes 90 epoches from yolov8s** - mAP50(B) = 0.98724 , mAP50-95(B) = 0.88405 <br>
-I see no easy way to improve it substantially, but keep moving forward ... <br>
+I already have [good results](metrics), no easy way to improve it substantially - but I keep moving forward ... <br>
 
 Planned classes: <br>
 ~ hrobot - robot mecha head <br>
@@ -49,11 +56,11 @@ Planned dataset improvements: <br>
 ~ more lying and upside-down scenes <br>
 ~ more obviously missed objects from BOORU CHARS <br>
 ~ more head closeups incl. furry muzzles <br>
+~ careful feedback cleanup on each [loop](process\README.md)
 
 Training variations (... oh, resources, my headache ...): <br>
-~ start from N (smaller) and M (bigger) v8 models, maybe from the scratch <br>
-~ purge NSFW samples from train+val to exclude adjacent classes collision and make results publicly reproducible <br>
-~ try to tune hyperparameters <br>
+~ chain-train spinoff models <br>
+~ tune hyperparameters <br>
 
 #### various hints
 
