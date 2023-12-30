@@ -37,9 +37,9 @@ Note: <br>
 ### Possible improvements
 
 A model already show impressive results (see metrics folder) : <br>
-**XX10 : 24 classes 90 epoches from XX09**       - mAP50(B) = 0.99241 , mAP50-95(B) = 0.91478 <br>
-**XX09 : 26 classes 90 epoches from XX06**       - mAP50(B) = 0.9938 ,  mAP50-95(B) = 0.89652 <br>
-**XX06 : 24 classes 90 epoches from yolov8s.pt** - mAP50(B) = 0.98724 , mAP50-95(B) = 0.88405 <br>
+**XX10 : 26 classes 60 epoches from XX09**    - mAP50(B) = 0.99241 , mAP50-95(B) = 0.91478 <br>
+**XX09 : 26 classes 60 epoches from XX06**    - mAP50(B) = 0.9938 ,  mAP50-95(B) = 0.89652 <br>
+**XX06 : 24 classes 90 epoches from yolov8s** - mAP50(B) = 0.98724 , mAP50-95(B) = 0.88405 <br>
 I see no easy way to improve it substantially, but keep moving forward ... <br>
 
 Planned classes: <br>
