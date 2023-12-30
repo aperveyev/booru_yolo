@@ -34,8 +34,8 @@ Note: <br>
 ~ non-head torso compopents usually (except hip and jack*) have SFW/NSFW adjacent oblect pair <br>
 ~ upside-down or lying pose detection may work worse than for frontal ones (due to training set bias) <br>
 
-**aa10 : 26 classes 60 epoches from XX09**    - mAP50(B) = 0.99241 , mAP50-95(B) = 0.91478 <br>
-**aa09 : 26 classes 60 epoches from XX06**    - mAP50(B) = 0.9938 ,  mAP50-95(B) = 0.89652 <br>
+**aa10 : 26 classes 60 epoches from aa09**    - mAP50(B) = 0.99241 , mAP50-95(B) = 0.91478 <br>
+**aa09 : 26 classes 60 epoches from aa06**    - mAP50(B) = 0.9938 ,  mAP50-95(B) = 0.89652 <br>
 **aa06 : 24 classes 90 epoches from yolov8s** - mAP50(B) = 0.98724 , mAP50-95(B) = 0.88405 <br>
 
 #### spinoff models
