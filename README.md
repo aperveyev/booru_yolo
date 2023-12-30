@@ -12,11 +12,10 @@ Key torso components covers: <br>
 ~ some furry specific features <br>
 Not so complex pose structure as [COCO keypoints](https://cocodataset.org/#keypoints-2020) will simplify scene interpretation a lot <br>
 
-Two separate models supported - general torso components "AA" and strong NSFW features "PP", <br>
-look [here](models/README.md) for details <br>
-NSFW classes / model can help to recheck safety rating assigned on imageboard(-s) <br>
+Two separate models supported - general torso components "AA" and NSFW features "PP", look [here](models/README.md) for details. <br>
+Iterative [process](process/README.md) already led to impressive dataset and good [model metrics](metrics). <br>
 
-"In the wild" source datasets are distributed via torrent : <br>
+Source datasets are distributed via torrent : <br>
 ~ [BOORU CHARS 2021](https://nyaa.si/view/1384820) <br>
 ~ [BOORU CHARS 2015](https://nyaa.si/view/1468367) <br>
 ~ [BOORU CHARS 2022](https://nyaa.si/view/1547662) <br>
@@ -31,7 +30,7 @@ Detection results over most of BOORU_CHARS stored in [KAGGLE dataset](https://ww
   ~ scene scale (by biggest or average head size) and depth (by smallest/biggest head size) <br>
   ~ relative and absolute characters positions, detected/implied interactions <br>
 - calculate IOU on equivalent objects of structurally comparable images so search for "similar composition" <br>
-- compare and/or combine results for several models/versions with the same input <br>
+- compare and/or merge results for several models/versions with the same input <br>
 
 Attention picker (for aa09 model), more examples [here](images09aa) <br>
 <br>
@@ -43,4 +42,4 @@ Similar composition search, more examples [here](images) <br>
 ![Similar composition search](images/BCB_sim_002.jpg)
 <br>
 
-This is completely hobbie project, but I can UPWORK something else if motivated enough <br>
+This is completely hobbie project, but I can Upwork something else if motivated enough <br>
