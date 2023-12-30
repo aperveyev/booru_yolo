@@ -12,7 +12,7 @@ Key torso components covers: <br>
 ~ some furry specific features <br>
 Not so complex pose structure as [COCO keypoints](https://cocodataset.org/#keypoints-2020) will simplify scene interpretation a lot <br>
 
-General torso components "AA" model supported look [here](models/README.md) for details. <br>
+General torso components model supported, look [here](models/README.md) for details. <br>
 Iterative [process](process/README.md) already led to [impressive dataset and good model metrics](metrics). <br>
 
 Source datasets are distributed via torrent : <br>
