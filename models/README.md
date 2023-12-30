@@ -38,16 +38,15 @@ Note: <br>
 **aa09 : 26 classes 60 epoches from aa06**    - mAP50(B) = 0.9938 ,  mAP50-95(B) = 0.89652 <br>
 **aa06 : 24 classes 90 epoches from yolov8s** - mAP50(B) = 0.98724 , mAP50-95(B) = 0.88405 <br>
 
-#### spinoff models
+#### spinoff models (12.2023) yolov8n_as01.pt , yolov8m_as02.pt
 
-Training conditions variations may break bottlenecks and pitfalls of a single model <br>
+Training condition variations may break bottlenecks and pitfalls of a single model <br>
 Purging NSFW samples from train+val may exclude adjacent classes collision and make results publicly reproducible <br>
+Cross-model NMS implemented in database to get "the best of" results and feedback <br>
 **as01 : 26 classes 80 epoches from yolov8n , SFW training subset** - mAP50(B) = 0.97806 , mAP50-95(B) = 0.85683 <br>
 **as02 : 26 classes only 30 epoches from yolov8m , SFW subset**     - mAP50(B) = 0.98694 , mAP50-95(B) = 0.87958 <br>
 
 ### Possible improvements
-
-I already have [good results](../metrics), no easy way to improve it substantially - but I keep moving forward ... <br>
 
 Planned classes: <br>
 ~ hrobot - robot mecha head <br>
@@ -70,6 +69,7 @@ yolo detect train data=E:\AAX\aax.yaml model=yolov8s.pt epochs=80 patience=20 im
 
 ### CHANGELOG
 
+(12.2023) yolov8n_as01.pt and yolov8m_as02.pt - spinoffs started using (almost) SFW training subset
 (12.2023) yolov8s_aa10.pt - magor training dataset update: much more HHORSE and HBIRD, heads with large hats fixed<br>
 (10.2023) yolov8s_aa09.pt - HHORSE and HBIRD classes added <br>
 (08.2023) yolov8s_aa06.pt - initial version for current reincarnation <br>
