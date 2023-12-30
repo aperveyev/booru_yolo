@@ -13,7 +13,7 @@ Key torso components covers: <br>
 Not so complex pose structure as [COCO keypoints](https://cocodataset.org/#keypoints-2020) will simplify scene interpretation a lot <br>
 
 Two separate models supported - general torso components "AA" and NSFW features "PP", look [here](models/README.md) for details. <br>
-Iterative [process](process/README.md) already led to impressive dataset and good [model metrics](metrics). <br>
+Iterative [process](process/README.md) already led to [impressive dataset and good model metrics](metrics). <br>
 
 Source datasets are distributed via torrent : <br>
 ~ [BOORU CHARS 2021](https://nyaa.si/view/1384820) <br>
@@ -21,7 +21,7 @@ Source datasets are distributed via torrent : <br>
 ~ [BOORU CHARS 2022](https://nyaa.si/view/1547662) <br>
 ~ [BOORU CHARS 2023](https://nyaa.si/view/1740396) also direct URL catalog there <br>
 
-Some SFW subset of training data is available on [Ultralitics HUB](https://hub.ultralytics.com/datasets/W1NNLLAb9HH7WvWj1nwP) <br>
+Some (almost) SFW subset of training data is available on [Ultralitics HUB](https://hub.ultralytics.com/datasets/W1NNLLAb9HH7WvWj1nwP) <br>
 Browse, download or even use it in-place for DIY training <br>
 
 Detection results over most of BOORU_CHARS stored in [KAGGLE dataset](https://www.kaggle.com/datasets/printcraft/yolov8-torso-detections-over-booru-chars) so we can:<br>
