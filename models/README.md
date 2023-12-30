@@ -67,7 +67,7 @@ Planned classes: <br>
 
 Planned dataset improvements: <br>
 ~ more lying and upside-down scenes <br>
-~ more obviously missed objects from BOORU CHARS
+~ more obviously missed objects from BOORU CHARS <br>
 ~ more head closeups incl. furry muzzles <br>
 
 Training variations (... oh, resources, my headache ...): <br>
@@ -75,11 +75,11 @@ Training variations (... oh, resources, my headache ...): <br>
 ~ purge NSFW samples from train+val to exclude adjacent classes collision and make results publicly reproducible <br>
 ~ try to tune hyperparameters <br>
 
-#### hints
+#### various hints
 
-~ SCALE training hyperparameter changed from 0.5 (default) to 0.6 to cover even bigger/smaller objects <br>
-~ all other training hyperparameter are defaults <br>
-~ yolo detect train data=E:\AAX\aax.yaml model=yolov8s.pt epochs=80 patience=20 imgsz=640 batch=16 workers=6 close_mosaic=10
+SCALE training hyperparameter changed from 0.5 (default) to 0.6 to cover even bigger/smaller objects <br>
+all other training hyperparameter are defaults <br>
+yolo detect train data=E:\AAX\aax.yaml model=yolov8s.pt epochs=80 patience=20 imgsz=640 batch=16 workers=6 close_mosaic=10
 
 ### CHANGELOG
 
