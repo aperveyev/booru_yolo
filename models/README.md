@@ -47,7 +47,7 @@ Purging NSFW samples from train+val may exclude adjacent classes collision and m
 
 ### Possible improvements
 
-I already have [good results](metrics), no easy way to improve it substantially - but I keep moving forward ... <br>
+I already have [good results](../metrics), no easy way to improve it substantially - but I keep moving forward ... <br>
 
 Planned classes: <br>
 ~ hrobot - robot mecha head <br>
@@ -56,7 +56,7 @@ Planned dataset improvements: <br>
 ~ more lying and upside-down scenes <br>
 ~ more obviously missed objects from BOORU CHARS <br>
 ~ more head closeups incl. furry muzzles <br>
-~ careful feedback cleanup on each [loop](process\README.md)
+~ careful feedback cleanup on each [loop](../process/README.md)
 
 Training variations (... oh, resources, my headache ...): <br>
 ~ chain-train spinoff models <br>
