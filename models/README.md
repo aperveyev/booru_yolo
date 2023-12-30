@@ -56,7 +56,7 @@ Planned dataset improvements: <br>
 ~ more lying and upside-down scenes <br>
 ~ more obviously missed objects from BOORU CHARS <br>
 ~ more head closeups incl. furry muzzles <br>
-~ careful feedback cleanup on each [loop](../process/README.md)
+~ careful feedback cleanup on each [workflow loop](../process/README.md#workflow-loop)
 
 Training variations (... oh, resources, my headache ...): <br>
 ~ chain-train spinoff models <br>
