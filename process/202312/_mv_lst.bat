@@ -1,0 +1,3 @@
+@ECHO ON
+
+FOR /F "USEBACKQ TOKENS=*" %%F IN (%1) DO MOVE "%%~F" %2
