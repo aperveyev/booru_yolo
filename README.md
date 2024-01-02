@@ -24,12 +24,13 @@ Source datasets are distributed via torrent : <br>
 Some (almost) SFW subset of training data is available on [Ultralitics HUB](https://hub.ultralytics.com/datasets/W1NNLLAb9HH7WvWj1nwP) <br>
 Browse, download or even use it in-place for DIY training <br>
 
-Detection results over most of BOORU_CHARS stored in [KAGGLE dataset](https://www.kaggle.com/datasets/printcraft/yolov8-torso-detections-over-booru-chars) so we can:<br>
-- assemble characters (join nearest head-bust-belly-feature groups) and classify image by scene structure: <br>
+Detection results over most of BOORU_CHARS stored in [KAGGLE dataset](https://www.kaggle.com/datasets/printcraft/yolov8-torso-detections-over-booru-chars)<br>
+for several models/versions with characters "assembled" (nearest head-bust-belly-feature groups joined), so we can:<br>
+- classify images by scene structure: <br>
   ~ how many characters depicted, what the species are, completeness of character(-s) "assembly" <br>
-  ~ scene scale (by biggest or average head size) and depth (by smallest/biggest head size) <br>
+  ~ scene scale (by biggest or average head size) and depth (by smallest to biggest head size ratio) <br>
   ~ relative and absolute characters positions, detected/implied interactions <br>
-- calculate IOU on equivalent objects of structurally comparable images so search for "similar composition" <br>
+- search for "similar composition" (calculating IOU on equivalent objects of structurally comparable images) <br>
 - compare and/or merge results for several models/versions with the same input <br>
 
 Attention picker (for aa09 model), more examples [here](images09aa) <br>
