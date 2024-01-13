@@ -59,7 +59,7 @@ Planned dataset improvements: <br>
 ~ careful feedback cleanup on each [workflow loop](../process/README.md#workflow-loop)
 
 Training variations (... oh, resources, my headache ...): <br>
-~ chain-train spinoff models <br>
+~ advance spinoff models <br>
 ~ tune hyperparameters <br>
 
 #### various hints
@@ -70,8 +70,8 @@ yolo detect train data=E:\AAX\aax.yaml model=yolov8s.pt epochs=80 patience=20 im
 
 ### CHANGELOG
 
-(12.2023) yolov8n_as01.pt and yolov8m_as02.pt - spinoffs started using (almost) SFW training subset <br>
-(12.2023) yolov8s_aa10.pt - magor training dataset update: much more HHORSE and HBIRD, heads with large hats fixed <br>
+(12.2023) yolov8n_as01.pt and yolov8m_as02.pt - spinoffs started using (almost) SFW [training subset](https://hub.ultralytics.com/datasets/W1NNLLAb9HH7WvWj1nwP) <br>
+(12.2023) yolov8s_aa10.pt - major training dataset update: much more HHORSE and HBIRD, heads with large hats fixed <br>
 (10.2023) yolov8s_aa09.pt - HHORSE and HBIRD classes added <br>
 (08.2023) yolov8s_aa06.pt - initial version for current reincarnation <br>
 (12.2022) kicked off from KAGGLE because of TOS violation (NSFW) >> all public descriptions, PTs and run results lost <br>
