@@ -1,4 +1,4 @@
-# PyTorch actual (01.2024) model
+# PyTorch actual (01.2024) models
 
 ### yolov8s_aa11.pt - mainstream general torso components model
  
@@ -74,7 +74,7 @@ yolo detect train data=E:\AAX\aax.yaml model=yolov8s.pt epochs=80 patience=20 im
 
 ### CHANGELOG
 
-(01.2024) yolov8s_aa11.pt , spinoff yolov8m_as03.pt - training data improvements, maximum resources on training
+(01.2024) yolov8s_aa11.pt , spinoff yolov8m_as03.pt - training data improvements, maximum resources on training <br>
 (12.2023) yolov8n_as01.pt and yolov8m_as02.pt - spinoffs started using (almost) SFW [training subset](https://hub.ultralytics.com/datasets/W1NNLLAb9HH7WvWj1nwP) <br>
 (12.2023) yolov8s_aa10.pt - major training dataset update: much more HHORSE and HBIRD, heads with large hats fixed <br>
 (10.2023) yolov8s_aa09.pt - HHORSE and HBIRD classes added <br>
