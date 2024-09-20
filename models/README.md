@@ -72,6 +72,8 @@ SCALE training hyperparameter changed from 0.5 (default) to 0.6 to cover even bi
 all other training hyperparameter are defaults <br>
 yolo detect train data=E:\AAX\aax.yaml model=yolov8s.pt epochs=80 patience=20 imgsz=640 batch=16 workers=6 close_mosaic=10
 
+PP models (undocumented) intended to use over NSFW images, try it ;-)
+
 ### CHANGELOG
 
 (01.2024) yolov8s_aa11.pt , spinoff yolov8m_as03.pt - training data improvements, maximum resources on training <br>
