@@ -1,6 +1,6 @@
-# PyTorch actual (01.2024) models
+# PyTorch actual (12.2024) models
 
-### yolov8s_aa11.pt - mainstream general torso components model
+### yolov8s_aa11.pt / yolov11m_aa22.pt - mainstream general torso components model
  
  0 - head   - anime pretty girl and not only <br>
  1 - bust   - torso part from collarbone center to pair of covered breasts <br>
@@ -34,10 +34,11 @@ Note: <br>
 ~ non-head torso compopents usually (except hip and jack) have SFW/NSFW adjacent oblect pair <br>
 ~ upside-down or lying pose detection may work worse than for frontal ones due to training set bias <br>
 
-**aa11 : 26 classes 60 epoches from aa10**    - mAP50(B) = 0.99267 , mAP50-95(B) = **0.92463** outstanding but not completely fair result <br>
-**aa10 : 26 classes 60 epoches from aa09**    - mAP50(B) = 0.99241 , mAP50-95(B) = 0.91478 <br>
-**aa09 : 26 classes 60 epoches from aa06**    - mAP50(B) = 0.9938 ,  mAP50-95(B) = 0.89652 <br>
-**aa06 : 24 classes 90 epoches from yolov8s** - mAP50(B) = 0.98724 , mAP50-95(B) = 0.88405 <br>
+**aa22 : 26 classes 90 epoches from yolov11m** - mAP50(B) = 0.995   , mAP50-95(B) = **0.96035** outstanding result ! seems to be overtrained a little bit <br>
+**aa11 : 26 classes 60 epoches from aa10**     - mAP50(B) = 0.99267 , mAP50-95(B) = 0.92463 <br>
+**aa10 : 26 classes 60 epoches from aa09**     - mAP50(B) = 0.99241 , mAP50-95(B) = 0.91478 <br>
+**aa09 : 26 classes 60 epoches from aa06**     - mAP50(B) = 0.9938  , mAP50-95(B) = 0.89652 <br>
+**aa06 : 24 classes 90 epoches from yolov8s**  - mAP50(B) = 0.98724 , mAP50-95(B) = 0.88405 <br>
 
 #### spinoff models (01.2024) yolov8n_as01.pt , yolov8m_as03.pt
 
@@ -54,7 +55,7 @@ NOTE : for ASxx models VAL samples **not included in TRAIN** whereas for AAxx mo
 ### Possible improvements
 
 Planned classes: <br>
-~ hrobot - robot mecha head <br>
+~ hrobot - robot mecha head, now often confused with hbird <br>
 
 Planned dataset improvements: <br>
 ~ more lying and upside-down scenes <br>
@@ -63,7 +64,6 @@ Planned dataset improvements: <br>
 ~ careful feedback cleanup on each [workflow loop](../process/README.md#workflow-loop)
 
 Training variations (... oh, resources, my headache ...): <br>
-~ advance spinoff models <br>
 ~ tune hyperparameters <br>
 
 #### various hints
@@ -72,10 +72,11 @@ SCALE training hyperparameter changed from 0.5 (default) to 0.6 to cover even bi
 all other training hyperparameter are defaults <br>
 yolo detect train data=E:\AAX\aax.yaml model=yolov8s.pt epochs=80 patience=20 imgsz=640 batch=16 workers=6 close_mosaic=10
 
-PP models (undocumented) intended to use over NSFW images, try it ;-)
+**PP models (undocumented) intended to use over NSFW images, try it on your own risk ;-)**
 
 ### CHANGELOG
 
+(12.2024) yolov11m_aa22.pt - switch to actual YOLO version and Medium base model, maximum resources on training <br>
 (01.2024) yolov8s_aa11.pt , spinoff yolov8m_as03.pt - training data improvements, maximum resources on training <br>
 (12.2023) yolov8n_as01.pt and yolov8m_as02.pt - spinoffs started using (almost) SFW [training subset](https://hub.ultralytics.com/datasets/W1NNLLAb9HH7WvWj1nwP) <br>
 (12.2023) yolov8s_aa10.pt - major training dataset update: much more HHORSE and HBIRD, heads with large hats fixed <br>
