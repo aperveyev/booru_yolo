@@ -1,7 +1,7 @@
 # YOLOv8 detector for BOORU CHARacters
 
 Here is an attempt to detect anime/CG character poses and hence scene composition <br>
-using [Ultralitics YOLOv8](https://github.com/ultralytics/ultralytics) <br>
+using [Ultralitics YOLOv8 and YOLOv11](https://github.com/ultralytics/ultralytics) <br>
 Detection classes has been built over typical views of torso components on scene, <br>
 when the feature of YOLO to use box-surrounding context seems very useful <br>
 
