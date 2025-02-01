@@ -20,6 +20,7 @@ Source datasets are distributed via torrent : <br>
 ~ [BOORU CHARS 2015](https://nyaa.si/view/1468367) <br>
 ~ [BOORU CHARS 2022](https://nyaa.si/view/1547662) <br>
 ~ [BOORU CHARS 2023](https://nyaa.si/view/1740396) also direct URL catalog there <br>
+~ [BOORU CHARS 2024](https://nyaa.si/view/1927862) <br>
 
 Some (almost) SFW subset of training data is available on [Ultralitics HUB](https://hub.ultralytics.com/datasets/W1NNLLAb9HH7WvWj1nwP) <br>
 Browse, download or even use it in-place for DIY training <br>
